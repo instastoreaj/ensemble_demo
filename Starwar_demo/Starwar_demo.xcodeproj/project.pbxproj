@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		046BDA6526F30A7400FA4BE8 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDA6426F30A7400FA4BE8 /* BaseObject.swift */; };
+		046BDA6A26F3B68900FA4BE8 /* GetFilmRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDA6926F3B68900FA4BE8 /* GetFilmRequest.swift */; };
+		046BDA7026F3B8F900FA4BE8 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDA6F26F3B8F900FA4BE8 /* FilmsViewController.swift */; };
+		046BDA7326F3B93B00FA4BE8 /* FilmsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDA7226F3B93B00FA4BE8 /* FilmsViewModel.swift */; };
+		046BDA7726F3D55900FA4BE8 /* FilmViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDA7626F3D55800FA4BE8 /* FilmViewCell.swift */; };
+		046BDA9B26F4291100FA4BE8 /* GetFilmDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDA9A26F4291100FA4BE8 /* GetFilmDetailRequest.swift */; };
+		046BDAA226F43A9A00FA4BE8 /* FilmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDAA126F43A9A00FA4BE8 /* FilmDetailViewController.swift */; };
+		046BDAAA26F43AF600FA4BE8 /* FilmDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDAA926F43AF600FA4BE8 /* FilmDetailViewModel.swift */; };
+		046BDAAD26F4423300FA4BE8 /* FilmDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046BDAAC26F4423300FA4BE8 /* FilmDetailViewController.storyboard */; };
+		046BDABA26F4513C00FA4BE8 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDAB926F4513C00FA4BE8 /* Characters.swift */; };
+		046BDABE26F45BD900FA4BE8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDABD26F45BD900FA4BE8 /* BaseViewController.swift */; };
+		046BDAC226F45C3000FA4BE8 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDAC126F45C3000FA4BE8 /* Configurable.swift */; };
+		046BDACD26F4DF6A00FA4BE8 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDACC26F4DF6A00FA4BE8 /* Planets.swift */; };
+		046BDAD026F4DF8B00FA4BE8 /* Starships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDACF26F4DF8B00FA4BE8 /* Starships.swift */; };
+		046BDAD326F4E1BF00FA4BE8 /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDAD226F4E1BF00FA4BE8 /* Vehicles.swift */; };
+		046BDAD626F4E25300FA4BE8 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDAD526F4E25300FA4BE8 /* Species.swift */; };
+		046BDAD926F4E4C400FA4BE8 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDAD826F4E4C400FA4BE8 /* Storyboarded.swift */; };
+		046BDADD26F4E91300FA4BE8 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDADC26F4E91300FA4BE8 /* UITableView+Extension.swift */; };
+		046BDAE026F4E93600FA4BE8 /* NSObject+Protocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDADF26F4E93600FA4BE8 /* NSObject+Protocol+Extension.swift */; };
+		046BDAE426F4FC0500FA4BE8 /* ResourceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDAE326F4FC0500FA4BE8 /* ResourceSection.swift */; };
+		046BDAE826F4FC4400FA4BE8 /* ResourcePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDAE726F4FC4400FA4BE8 /* ResourcePresentable.swift */; };
+		046BDAF026F4FCEF00FA4BE8 /* ResourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDAEF26F4FCEF00FA4BE8 /* ResourceProtocol.swift */; };
+		046BDAF826F4FD8400FA4BE8 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDAF726F4FD8400FA4BE8 /* TableViewDataSource.swift */; };
+		046BDB0126F534E200FA4BE8 /* FilmViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046BDB0026F534E200FA4BE8 /* FilmViewCell.xib */; };
+		046BDB0426F5367A00FA4BE8 /* OverviewResourcePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BDB0326F5367A00FA4BE8 /* OverviewResourcePresentable.swift */; };
+		0497934226F8258F0061A947 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497934126F8258F0061A947 /* Indicator.swift */; };
+		0497934526F829090061A947 /* AppAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497934426F829090061A947 /* AppAlert.swift */; };
+		0497934826F829FB0061A947 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497934726F829FB0061A947 /* BaseModel.swift */; };
+		0497935326F852BA0061A947 /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497935226F852BA0061A947 /* CharacterDetailViewModel.swift */; };
+		0497935626F852D60061A947 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497935526F852D60061A947 /* CharacterDetailViewController.swift */; };
+		0497935926F852E60061A947 /* CharacterDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0497935826F852E60061A947 /* CharacterDetailViewController.storyboard */; };
+		04EA194026F190C5001328D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA193F26F190C5001328D2 /* AppDelegate.swift */; };
+		04EA194226F190C5001328D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA194126F190C5001328D2 /* SceneDelegate.swift */; };
+		04EA194726F190C5001328D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EA194526F190C5001328D2 /* Main.storyboard */; };
+		04EA194926F190C7001328D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EA194826F190C7001328D2 /* Assets.xcassets */; };
+		04EA194C26F190C7001328D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EA194A26F190C7001328D2 /* LaunchScreen.storyboard */; };
+		04EA196626F28A68001328D2 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA196526F28A68001328D2 /* Observable.swift */; };
+		04EA197526F2D6C2001328D2 /* FilmsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA197426F2D6C2001328D2 /* FilmsModel.swift */; };
+		04EA198226F2ED45001328D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA198126F2ED45001328D2 /* NetworkManager.swift */; };
+		04EA198526F2ED87001328D2 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA198426F2ED87001328D2 /* RequestHandler.swift */; };
+		04EA198B26F2EF0D001328D2 /* BaseApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA198A26F2EF0D001328D2 /* BaseApiRequest.swift */; };
+		C0055F6E7C76F316A041ED62 /* Pods_Starwar_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E83585D471BF3DB3C2AD8D39 /* Pods_Starwar_demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		046BDA6426F30A7400FA4BE8 /* BaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
+		046BDA6926F3B68900FA4BE8 /* GetFilmRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFilmRequest.swift; sourceTree = "<group>"; };
+		046BDA6F26F3B8F900FA4BE8 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
+		046BDA7226F3B93B00FA4BE8 /* FilmsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewModel.swift; sourceTree = "<group>"; };
+		046BDA7626F3D55800FA4BE8 /* FilmViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewCell.swift; sourceTree = "<group>"; };
+		046BDA9A26F4291100FA4BE8 /* GetFilmDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFilmDetailRequest.swift; sourceTree = "<group>"; };
+		046BDAA126F43A9A00FA4BE8 /* FilmDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewController.swift; sourceTree = "<group>"; };
+		046BDAA926F43AF600FA4BE8 /* FilmDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilmDetailViewModel.swift; path = Starwar_demo/Modules/FilmDetailViewModel.swift; sourceTree = SOURCE_ROOT; };
+		046BDAAC26F4423300FA4BE8 /* FilmDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilmDetailViewController.storyboard; sourceTree = "<group>"; };
+		046BDAB926F4513C00FA4BE8 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		046BDABD26F45BD900FA4BE8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		046BDAC126F45C3000FA4BE8 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		046BDACC26F4DF6A00FA4BE8 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		046BDACF26F4DF8B00FA4BE8 /* Starships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starships.swift; sourceTree = "<group>"; };
+		046BDAD226F4E1BF00FA4BE8 /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
+		046BDAD526F4E25300FA4BE8 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		046BDAD826F4E4C400FA4BE8 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		046BDADC26F4E91300FA4BE8 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		046BDADF26F4E93600FA4BE8 /* NSObject+Protocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Protocol+Extension.swift"; sourceTree = "<group>"; };
+		046BDAE326F4FC0500FA4BE8 /* ResourceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceSection.swift; sourceTree = "<group>"; };
+		046BDAE726F4FC4400FA4BE8 /* ResourcePresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcePresentable.swift; sourceTree = "<group>"; };
+		046BDAEF26F4FCEF00FA4BE8 /* ResourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceProtocol.swift; sourceTree = "<group>"; };
+		046BDAF726F4FD8400FA4BE8 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		046BDB0026F534E200FA4BE8 /* FilmViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmViewCell.xib; sourceTree = "<group>"; };
+		046BDB0326F5367A00FA4BE8 /* OverviewResourcePresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewResourcePresentable.swift; sourceTree = "<group>"; };
+		0497934126F8258F0061A947 /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		0497934426F829090061A947 /* AppAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAlert.swift; sourceTree = "<group>"; };
+		0497934726F829FB0061A947 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		0497935226F852BA0061A947 /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
+		0497935526F852D60061A947 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		0497935826F852E60061A947 /* CharacterDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterDetailViewController.storyboard; sourceTree = "<group>"; };
+		04EA193C26F190C5001328D2 /* Starwar_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starwar_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EA193F26F190C5001328D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04EA194126F190C5001328D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04EA194626F190C5001328D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04EA194826F190C7001328D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04EA194B26F190C7001328D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04EA194D26F190C7001328D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EA196526F28A68001328D2 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		04EA197426F2D6C2001328D2 /* FilmsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsModel.swift; sourceTree = "<group>"; };
+		04EA198126F2ED45001328D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		04EA198426F2ED87001328D2 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		04EA198A26F2EF0D001328D2 /* BaseApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiRequest.swift; sourceTree = "<group>"; };
+		66BA0CA267C02BB10BD87736 /* Pods-Starwar_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starwar_demo.release.xcconfig"; path = "Target Support Files/Pods-Starwar_demo/Pods-Starwar_demo.release.xcconfig"; sourceTree = "<group>"; };
+		732224D408FC8181E30E0A35 /* Pods-Starwar_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starwar_demo.debug.xcconfig"; path = "Target Support Files/Pods-Starwar_demo/Pods-Starwar_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		E83585D471BF3DB3C2AD8D39 /* Pods_Starwar_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Starwar_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04EA193926F190C5001328D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0055F6E7C76F316A041ED62 /* Pods_Starwar_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		046BDA6726F30B8800FA4BE8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04EA198A26F2EF0D001328D2 /* BaseApiRequest.swift */,
+				046BDA6426F30A7400FA4BE8 /* BaseObject.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		046BDA6826F3B67600FA4BE8 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				046BDA6926F3B68900FA4BE8 /* GetFilmRequest.swift */,
+				046BDA9A26F4291100FA4BE8 /* GetFilmDetailRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		046BDA7526F3D54600FA4BE8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				046BDA7626F3D55800FA4BE8 /* FilmViewCell.swift */,
+				046BDB0026F534E200FA4BE8 /* FilmViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		046BDA8F26F3F24500FA4BE8 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				046BDAE626F4FC2900FA4BE8 /* Presentable */,
+				046BDAC026F45C0B00FA4BE8 /* Protocol */,
+				046BDABD26F45BD900FA4BE8 /* BaseViewController.swift */,
+				0497934726F829FB0061A947 /* BaseModel.swift */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		046BDA9D26F43A6A00FA4BE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				046BDAA126F43A9A00FA4BE8 /* FilmDetailViewController.swift */,
+				046BDAAC26F4423300FA4BE8 /* FilmDetailViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		046BDA9F26F43A7B00FA4BE8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				046BDAA926F43AF600FA4BE8 /* FilmDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		046BDAC026F45C0B00FA4BE8 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				046BDAC126F45C3000FA4BE8 /* Configurable.swift */,
+				046BDAD826F4E4C400FA4BE8 /* Storyboarded.swift */,
+				046BDADC26F4E91300FA4BE8 /* UITableView+Extension.swift */,
+				046BDADF26F4E93600FA4BE8 /* NSObject+Protocol+Extension.swift */,
+				046BDAE326F4FC0500FA4BE8 /* ResourceSection.swift */,
+				046BDAEF26F4FCEF00FA4BE8 /* ResourceProtocol.swift */,
+				0497934126F8258F0061A947 /* Indicator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		046BDAE626F4FC2900FA4BE8 /* Presentable */ = {
+			isa = PBXGroup;
+			children = (
+				046BDAE726F4FC4400FA4BE8 /* ResourcePresentable.swift */,
+				046BDB0326F5367A00FA4BE8 /* OverviewResourcePresentable.swift */,
+			);
+			path = Presentable;
+			sourceTree = "<group>";
+		};
+		046BDAF626F4FD7100FA4BE8 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				046BDAF726F4FD8400FA4BE8 /* TableViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		0497934E26F852450061A947 /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0497935026F8525B0061A947 /* View */,
+				0497934F26F852500061A947 /* ViewModel */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		0497934F26F852500061A947 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0497935226F852BA0061A947 /* CharacterDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0497935026F8525B0061A947 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0497935526F852D60061A947 /* CharacterDetailViewController.swift */,
+				0497935826F852E60061A947 /* CharacterDetailViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0497935126F852790061A947 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04EA197426F2D6C2001328D2 /* FilmsModel.swift */,
+				046BDAB926F4513C00FA4BE8 /* Characters.swift */,
+				046BDACC26F4DF6A00FA4BE8 /* Planets.swift */,
+				046BDACF26F4DF8B00FA4BE8 /* Starships.swift */,
+				046BDAD226F4E1BF00FA4BE8 /* Vehicles.swift */,
+				046BDAD526F4E25300FA4BE8 /* Species.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04EA193326F190C5001328D2 = {
+			isa = PBXGroup;
+			children = (
+				04EA193E26F190C5001328D2 /* Starwar_demo */,
+				04EA193D26F190C5001328D2 /* Products */,
+				E28C528EF47F9D06612D0F2C /* Pods */,
+				BBAC685DE6F921D1207BA6F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04EA193D26F190C5001328D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04EA193C26F190C5001328D2 /* Starwar_demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04EA193E26F190C5001328D2 /* Starwar_demo */ = {
+			isa = PBXGroup;
+			children = (
+				046BDA8F26F3F24500FA4BE8 /* BaseClass */,
+				04EA198026F2ED26001328D2 /* Network */,
+				04EA196A26F2D55E001328D2 /* Modules */,
+				04EA196826F28AF9001328D2 /* Resource */,
+				04EA196426F28A51001328D2 /* Utilities */,
+				04EA193F26F190C5001328D2 /* AppDelegate.swift */,
+				04EA194126F190C5001328D2 /* SceneDelegate.swift */,
+				04EA194A26F190C7001328D2 /* LaunchScreen.storyboard */,
+			);
+			path = Starwar_demo;
+			sourceTree = "<group>";
+		};
+		04EA196426F28A51001328D2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				04EA196526F28A68001328D2 /* Observable.swift */,
+				0497934426F829090061A947 /* AppAlert.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		04EA196826F28AF9001328D2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				04EA194826F190C7001328D2 /* Assets.xcassets */,
+				04EA194D26F190C7001328D2 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		04EA196A26F2D55E001328D2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0497935126F852790061A947 /* Model */,
+				0497934E26F852450061A947 /* CharacterDetail */,
+				046BDAF626F4FD7100FA4BE8 /* DataSource */,
+				04EA196C26F2D593001328D2 /* FilmsList */,
+				04EA196B26F2D578001328D2 /* FilmDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		04EA196B26F2D578001328D2 /* FilmDetail */ = {
+			isa = PBXGroup;
+			children = (
+				046BDA9F26F43A7B00FA4BE8 /* ViewModel */,
+				046BDA9D26F43A6A00FA4BE8 /* View */,
+			);
+			path = FilmDetail;
+			sourceTree = "<group>";
+		};
+		04EA196C26F2D593001328D2 /* FilmsList */ = {
+			isa = PBXGroup;
+			children = (
+				04EA196F26F2D602001328D2 /* View */,
+				04EA196D26F2D5E5001328D2 /* ViewModel */,
+			);
+			path = FilmsList;
+			sourceTree = "<group>";
+		};
+		04EA196D26F2D5E5001328D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				046BDA7226F3B93B00FA4BE8 /* FilmsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04EA196F26F2D602001328D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				046BDA7526F3D54600FA4BE8 /* Cell */,
+				046BDA6F26F3B8F900FA4BE8 /* FilmsViewController.swift */,
+				04EA194526F190C5001328D2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04EA198026F2ED26001328D2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				046BDA6826F3B67600FA4BE8 /* Request */,
+				046BDA6726F30B8800FA4BE8 /* Base */,
+				04EA198126F2ED45001328D2 /* NetworkManager.swift */,
+				04EA198426F2ED87001328D2 /* RequestHandler.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BBAC685DE6F921D1207BA6F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E83585D471BF3DB3C2AD8D39 /* Pods_Starwar_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E28C528EF47F9D06612D0F2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				732224D408FC8181E30E0A35 /* Pods-Starwar_demo.debug.xcconfig */,
+				66BA0CA267C02BB10BD87736 /* Pods-Starwar_demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04EA193B26F190C5001328D2 /* Starwar_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EA195026F190C7001328D2 /* Build configuration list for PBXNativeTarget "Starwar_demo" */;
+			buildPhases = (
+				7606E810922DA115A1B050A4 /* [CP] Check Pods Manifest.lock */,
+				04EA193826F190C5001328D2 /* Sources */,
+				04EA193926F190C5001328D2 /* Frameworks */,
+				04EA193A26F190C5001328D2 /* Resources */,
+				962994374C94098DE8BCEE2C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starwar_demo;
+			productName = Starwar_demo;
+			productReference = 04EA193C26F190C5001328D2 /* Starwar_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04EA193426F190C5001328D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					04EA193B26F190C5001328D2 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 04EA193726F190C5001328D2 /* Build configuration list for PBXProject "Starwar_demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04EA193326F190C5001328D2;
+			productRefGroup = 04EA193D26F190C5001328D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04EA193B26F190C5001328D2 /* Starwar_demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04EA193A26F190C5001328D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0497935926F852E60061A947 /* CharacterDetailViewController.storyboard in Resources */,
+				046BDB0126F534E200FA4BE8 /* FilmViewCell.xib in Resources */,
+				04EA194C26F190C7001328D2 /* LaunchScreen.storyboard in Resources */,
+				04EA194926F190C7001328D2 /* Assets.xcassets in Resources */,
+				046BDAAD26F4423300FA4BE8 /* FilmDetailViewController.storyboard in Resources */,
+				04EA194726F190C5001328D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7606E810922DA115A1B050A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Starwar_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		962994374C94098DE8BCEE2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starwar_demo/Pods-Starwar_demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starwar_demo/Pods-Starwar_demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Starwar_demo/Pods-Starwar_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04EA193826F190C5001328D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EA197526F2D6C2001328D2 /* FilmsModel.swift in Sources */,
+				046BDACD26F4DF6A00FA4BE8 /* Planets.swift in Sources */,
+				0497934526F829090061A947 /* AppAlert.swift in Sources */,
+				046BDABA26F4513C00FA4BE8 /* Characters.swift in Sources */,
+				04EA196626F28A68001328D2 /* Observable.swift in Sources */,
+				04EA198526F2ED87001328D2 /* RequestHandler.swift in Sources */,
+				046BDAD926F4E4C400FA4BE8 /* Storyboarded.swift in Sources */,
+				046BDA9B26F4291100FA4BE8 /* GetFilmDetailRequest.swift in Sources */,
+				046BDAC226F45C3000FA4BE8 /* Configurable.swift in Sources */,
+				046BDABE26F45BD900FA4BE8 /* BaseViewController.swift in Sources */,
+				046BDA7026F3B8F900FA4BE8 /* FilmsViewController.swift in Sources */,
+				046BDB0426F5367A00FA4BE8 /* OverviewResourcePresentable.swift in Sources */,
+				046BDA7726F3D55900FA4BE8 /* FilmViewCell.swift in Sources */,
+				0497935326F852BA0061A947 /* CharacterDetailViewModel.swift in Sources */,
+				046BDAA226F43A9A00FA4BE8 /* FilmDetailViewController.swift in Sources */,
+				046BDAAA26F43AF600FA4BE8 /* FilmDetailViewModel.swift in Sources */,
+				04EA198B26F2EF0D001328D2 /* BaseApiRequest.swift in Sources */,
+				046BDAE426F4FC0500FA4BE8 /* ResourceSection.swift in Sources */,
+				046BDA7326F3B93B00FA4BE8 /* FilmsViewModel.swift in Sources */,
+				04EA198226F2ED45001328D2 /* NetworkManager.swift in Sources */,
+				0497934226F8258F0061A947 /* Indicator.swift in Sources */,
+				046BDA6526F30A7400FA4BE8 /* BaseObject.swift in Sources */,
+				046BDADD26F4E91300FA4BE8 /* UITableView+Extension.swift in Sources */,
+				046BDAD026F4DF8B00FA4BE8 /* Starships.swift in Sources */,
+				046BDAF026F4FCEF00FA4BE8 /* ResourceProtocol.swift in Sources */,
+				0497935626F852D60061A947 /* CharacterDetailViewController.swift in Sources */,
+				0497934826F829FB0061A947 /* BaseModel.swift in Sources */,
+				04EA194026F190C5001328D2 /* AppDelegate.swift in Sources */,
+				046BDAE826F4FC4400FA4BE8 /* ResourcePresentable.swift in Sources */,
+				046BDAD326F4E1BF00FA4BE8 /* Vehicles.swift in Sources */,
+				04EA194226F190C5001328D2 /* SceneDelegate.swift in Sources */,
+				046BDAE026F4E93600FA4BE8 /* NSObject+Protocol+Extension.swift in Sources */,
+				046BDAD626F4E25300FA4BE8 /* Species.swift in Sources */,
+				046BDAF826F4FD8400FA4BE8 /* TableViewDataSource.swift in Sources */,
+				046BDA6A26F3B68900FA4BE8 /* GetFilmRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04EA194526F190C5001328D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EA194626F190C5001328D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04EA194A26F190C7001328D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EA194B26F190C7001328D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04EA194E26F190C7001328D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04EA194F26F190C7001328D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04EA195126F190C7001328D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732224D408FC8181E30E0A35 /* Pods-Starwar_demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Starwar_demo/Resource/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "aj.Starwar-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04EA195226F190C7001328D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66BA0CA267C02BB10BD87736 /* Pods-Starwar_demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Starwar_demo/Resource/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "aj.Starwar-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04EA193726F190C5001328D2 /* Build configuration list for PBXProject "Starwar_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EA194E26F190C7001328D2 /* Debug */,
+				04EA194F26F190C7001328D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EA195026F190C7001328D2 /* Build configuration list for PBXNativeTarget "Starwar_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EA195126F190C7001328D2 /* Debug */,
+				04EA195226F190C7001328D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04EA193426F190C5001328D2 /* Project object */;
+}
